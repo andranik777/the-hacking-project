@@ -1,0 +1,138 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wrapper {
+    width: 400px;
+    height: 100px;
+}
+
+.wrapper nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: space-between;
+    color: #404040;
+    margin-right: 20px;
+    line-height: 24px;
+    font-size: 13px;
+    font-family: arial, sans-serif;
+}
+
+
+/*quand la souris est focus sur le lien le text devient souligné */
+
+.wrapper nav a:hover {
+    text-decoration: underline;
+}
+
+.wrapper div {
+    width: 70px;
+    height: 20px;
+    margin: 20px 0;
+}
+
+section.wrapper_section {
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 120px;
+}
+
+input #search {
+    margin: 0 auto;
+    padding-top: 6px;
+    width: 484px;
+    width: auto;
+    max-width: 484px;
+    height: 200px;
+}
+
+div#boutons {
+    margin-top: 25px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+footer {
+    display: flex;
+    background: #f2f2f2;
+    background-repeat: repeat-y;
+    border-top: solid 2px #e4e4e4;
+    bottom: 0;
+    padding-bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+footer ul {
+    display: flex;
+    float: left;
+    padding: 1px;
+}
+
+footer ul li {
+    display: inline;
+    color: #666666;
+    font-size: 14px;
+    padding: 13px;
+}
+
+footer ul li:hover {
+    text-decoration: underline;
+}
+
+.connexion {
+    line-height: normal;
+    background: #4887ef;
+    padding: 5px 9px 5px 9px;
+    border-radius: 3px;
+    font-weight: bold;
+    color: #f2f2f2;
+    border-radius: 3px;
+}
+
+
+/*suprimer le cadre bleu du champ de saisie*/
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+
+/* style des boutons*/
+
+input[type="submit"] {
+    border: 1px solid #D3D3D3;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+}
