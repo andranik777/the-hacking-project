@@ -1,0 +1,13 @@
+.main-image {
+    background: url(img/surfer.jpg);
+    height: 550px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.centered {
+    position: absolute;
+    top: 21%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
