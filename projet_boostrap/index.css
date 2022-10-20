@@ -1,8 +1,13 @@
 .main-image {
     background: url(img/surfer.jpg);
-    height: 550px;
+    height: 100vh;
     width: 100%;
     object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    /*background-position-x : -30rem;*/
+    background-position-y: -20rem;
+
 }
 
 .centered {
@@ -10,4 +15,29 @@
     top: 21%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+#surf-girl {
+    background-image: url(img/surfer.jpg)
+}
+
+@media only screen and (max-width: 600px)  {
+
+    .main-image {
+        background: url(img/surfer.jpg);
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-position-y: -20rem;
+        background-position-x: -55rem
+    }
+    #surf-image-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #surf-adventure {
+        flex-direction: column
+    }
 }
